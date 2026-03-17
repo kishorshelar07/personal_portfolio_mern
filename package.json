@@ -1,0 +1,19 @@
+{
+  "name": "kishor-shelar-portfolio",
+  "version": "1.0.0",
+  "description": "Premium full-stack portfolio for Kishor Shelar",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "cd frontend && npm start",
+    "dev:backend": "cd backend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start",
+    "seed": "cd backend && npm run seed",
+    "seed:admin": "cd backend && npm run seed:admin"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

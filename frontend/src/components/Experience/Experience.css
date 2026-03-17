@@ -1,0 +1,208 @@
+.experience-section {
+  background: var(--grad-bg);
+  position: relative;
+}
+
+.experience-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(139,92,246,0.3), transparent);
+}
+
+.experience-timeline {
+  position: relative;
+  max-width: 880px;
+  margin: 0 auto;
+  padding-left: 40px;
+}
+
+/* Vertical line */
+.experience-timeline::before {
+  content: '';
+  position: absolute;
+  left: 16px;
+  top: 10px;
+  bottom: 10px;
+  width: 2px;
+  background: linear-gradient(180deg, #8b5cf6, #ec4899, rgba(139,92,246,0.1));
+  border-radius: 1px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 36px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -36px;
+  top: 24px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--navy);
+  border: 2px solid var(--dot-color, #8b5cf6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dot-color, #8b5cf6);
+  font-size: 0.95rem;
+  box-shadow: 0 0 16px rgba(139,92,246,0.3);
+  z-index: 1;
+}
+
+.timeline-card {
+  padding: 28px 28px 24px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-card:hover {
+  transform: translateX(6px);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.4);
+}
+
+/* Exp Header */
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.exp-company-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(139,92,246,0.1);
+  border: 1px solid rgba(139,92,246,0.2);
+  border-radius: 50px;
+  padding: 5px 14px;
+  font-size: 0.82rem;
+  color: var(--badge-color, #8b5cf6);
+  font-family: 'JetBrains Mono', monospace;
+  margin-bottom: 10px;
+}
+
+.exp-role {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+
+.exp-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.exp-period,
+.exp-location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.83rem;
+  color: #a1a1aa;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.exp-type-badge {
+  font-size: 0.75rem;
+  padding: 3px 12px;
+  border-radius: 50px;
+  background: rgba(139,92,246,0.12);
+  color: #8b5cf6;
+  border: 1px solid rgba(139,92,246,0.2);
+}
+
+.exp-duration-badge {
+  background: linear-gradient(135deg, rgba(139,92,246,0.15), rgba(236,72,153,0.1));
+  border: 1px solid rgba(139,92,246,0.2);
+  border-radius: 12px;
+  padding: 10px 16px;
+  text-align: center;
+  min-width: 80px;
+  flex-shrink: 0;
+}
+
+.duration-num {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 0.88rem;
+  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Responsibilities */
+.exp-responsibilities {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.exp-responsibilities li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: #a1a1aa;
+  line-height: 1.6;
+}
+
+.resp-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #8b5cf6;
+  flex-shrink: 0;
+  margin-top: 7px;
+}
+
+/* Tech tags */
+.exp-tech-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding-top: 16px;
+  border-top: 1px solid rgba(139,92,246,0.08);
+}
+
+.tech-row-label {
+  font-size: 0.78rem;
+  color: #52525b;
+  font-family: 'JetBrains Mono', monospace;
+  padding-top: 3px;
+  flex-shrink: 0;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.exp-tech-tag {
+  font-size: 0.73rem;
+  padding: 3px 10px;
+  border-radius: 6px;
+  background: rgba(236,72,153,0.07);
+  border: 1px solid rgba(236,72,153,0.15);
+  color: #ec4899;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+@media (max-width: 768px) {
+  .exp-header { flex-direction: column; gap: 12px; }
+  .exp-duration-badge { display: none; }
+  .experience-timeline { padding-left: 30px; }
+}

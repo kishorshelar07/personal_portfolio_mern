@@ -1,0 +1,209 @@
+.projects-section {
+  background: var(--navy-800);
+  position: relative;
+}
+
+.projects-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(139,92,246,0.3), transparent);
+}
+
+/* Filter tabs */
+.filter-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.filter-tab {
+  background: rgba(139,92,246,0.06);
+  border: 1px solid rgba(139,92,246,0.15);
+  color: #a1a1aa;
+  padding: 8px 22px;
+  border-radius: 50px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-tab:hover {
+  color: var(--white);
+  border-color: rgba(139,92,246,0.4);
+}
+
+.filter-tab.active {
+  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+  border-color: transparent;
+  color: white;
+  box-shadow: 0 4px 16px rgba(139,92,246,0.4);
+}
+
+/* Project card */
+.project-card {
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-banner {
+  height: 160px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.project-bg-icon {
+  position: absolute;
+  font-size: 6rem;
+  opacity: 0.15;
+  user-select: none;
+}
+
+.project-icon-wrap {
+  width: 64px;
+  height: 64px;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: white;
+  border: 1px solid rgba(255,255,255,0.2);
+  position: relative;
+  z-index: 1;
+}
+
+.featured-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 50px;
+  padding: 4px 12px;
+  font-size: 0.72rem;
+  color: #fbbf24;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.project-category-tag {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 50px;
+  padding: 3px 12px;
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.8);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.project-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 12px;
+}
+
+.project-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--white);
+  margin: 0;
+}
+
+.project-desc {
+  color: #a1a1aa;
+  font-size: 0.88rem;
+  line-height: 1.7;
+  margin: 0;
+  flex: 1;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.project-tech-tag {
+  font-size: 0.72rem;
+  padding: 3px 10px;
+  border-radius: 6px;
+  background: rgba(236,72,153,0.07);
+  border: 1px solid rgba(236,72,153,0.15);
+  color: #ec4899;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.project-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.project-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 18px;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: 'DM Sans', sans-serif;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  flex: 1;
+  justify-content: center;
+}
+
+.project-btn-outline {
+  background: transparent;
+  border: 1.5px solid rgba(139,92,246,0.3);
+  color: #a1a1aa;
+}
+
+.project-btn-outline:hover {
+  border-color: #8b5cf6;
+  color: #8b5cf6;
+  background: rgba(139,92,246,0.08);
+}
+
+.project-btn-primary {
+  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+  border: none;
+  color: white;
+  box-shadow: 0 4px 14px rgba(139,92,246,0.3);
+}
+
+.project-btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(139,92,246,0.5);
+  color: white;
+}
+
+/* GitHub CTA */
+.github-cta-text {
+  color: #a1a1aa;
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+}

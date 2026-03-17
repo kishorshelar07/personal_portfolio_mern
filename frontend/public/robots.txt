@@ -1,0 +1,10 @@
+# Kishor Shelar Portfolio — robots.txt
+User-agent: *
+Allow: /
+
+# Disallow admin routes
+Disallow: /admin/
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://kishorshelar.dev/sitemap.xml
