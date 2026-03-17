@@ -104,14 +104,7 @@ npm install
 cp .env.example .env
 ```
 
-Edit `.env` with your values:
-```env
-PORT=5000
-MONGODB_URI=mongodb://localhost:27017/portfolio_db
-JWT_SECRET=your_super_secret_key_here
-CLIENT_URL=http://localhost:3000
-NODE_ENV=development
-```
+
 
 ```bash
 # Seed projects to MongoDB
