@@ -4,7 +4,7 @@ import useScrollReveal from '../../hooks/useScrollReveal';
 import { fadeUp, slideLeft, slideRight } from '../../animations/variants';
 import './GitHubActivity.css';
 
-const GITHUB_USERNAME = 'kishorshelar';
+const GITHUB_USERNAME = 'kishorshelar07';
 
 const GitHubActivity = () => {
   const [titleRef, titleInView] = useScrollReveal();

@@ -10,7 +10,7 @@ const projects = [
     title: 'Netflix Clone',
     description: 'A full-stack Netflix-inspired streaming platform with user authentication, browse movies by genre, search functionality, and watch trailers powered by TMDB API.',
     techStack: ['React', 'Node.js', 'MongoDB', 'Express', 'JWT', 'TMDB API'],
-    githubUrl: 'https://github.com/kishorshelar/netflix-clone',
+    githubUrl: 'https://github.com/kishorshelar07',
     liveUrl: '#',
     category: 'Full-Stack',
     featured: true,
@@ -23,7 +23,7 @@ const projects = [
     title: 'CRUD Application',
     description: 'A production-grade CRUD app with React frontend, Node.js/Express REST APIs, and MySQL database. Features full user management with create, read, update, delete operations.',
     techStack: ['React', 'Node.js', 'Express', 'MySQL', 'REST API'],
-    githubUrl: 'https://github.com/kishorshelar/crud-app',
+    githubUrl: 'https://github.com/kishorshelar07',
     liveUrl: '#',
     category: 'Full-Stack',
     featured: true,
@@ -36,7 +36,7 @@ const projects = [
     title: 'Personal Calendar Generator',
     description: 'A custom calendar application allowing users to upload images, add events, and generate personalized printable calendars with export functionality.',
     techStack: ['React', 'Node.js', 'MongoDB', 'Cloudinary', 'Express'],
-    githubUrl: 'https://github.com/kishorshelar/calendar-generator',
+    githubUrl: 'https://github.com/kishorshelar07',
     liveUrl: '#',
     category: 'Full-Stack',
     featured: true,
@@ -49,7 +49,7 @@ const projects = [
     title: 'Tic Tac Toe Game',
     description: 'An interactive browser-based Tic Tac Toe game with AI opponent using minimax algorithm, sound effects, score tracking, and smooth animations.',
     techStack: ['HTML', 'CSS', 'JavaScript'],
-    githubUrl: 'https://github.com/kishorshelar/tic-tac-toe',
+    githubUrl: 'https://github.com/kishorshelar07',
     liveUrl: '#',
     category: 'Frontend',
     featured: false,
@@ -125,7 +125,7 @@ const Projects = () => {
         >
           <p className="github-cta-text">Want to see more of my work?</p>
           <a
-            href="https://github.com/kishorshelar"
+            href="https://github.com/kishorshelar07"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-outline-custom"
