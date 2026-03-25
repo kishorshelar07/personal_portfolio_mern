@@ -12,10 +12,10 @@ const NAV = [
 ];
 
 const SOCIALS = [
-  { icon: 'bi-github', href: 'https://github.com/kishorshelar', label: 'GitHub' },
-  { icon: 'bi-linkedin', href: 'https://linkedin.com/in/kishorshelar', label: 'LinkedIn' },
-  { icon: 'bi-envelope-fill', href: 'mailto:kishorshelar@gmail.com', label: 'Email' },
-  { icon: 'bi-telephone-fill', href: 'tel:+919876543210', label: 'Phone' },
+  { icon: 'bi-github', href: 'https://github.com/kishorshelar07', label: 'GitHub' },
+  { icon: 'bi-linkedin', href: 'https://linkedin.com/in/kishorshelar1610', label: 'LinkedIn' },
+  { icon: 'bi-envelope-fill', href: 'mailto:kishorshelar560@gmail.com', label: 'Email' },
+  { icon: 'bi-telephone-fill', href: 'tel:+918308516345', label: 'Phone' },
 ];
 
 const Footer = () => {
@@ -76,8 +76,8 @@ const Footer = () => {
             <h4 className="footer-col-title">Contact</h4>
             <div className="footer-contact-items">
               {[
-                { icon: 'bi-envelope', label: 'kishorshelar@gmail.com', href: 'mailto:kishorshelar@gmail.com' },
-                { icon: 'bi-telephone', label: '+91 98765 43210', href: 'tel:+919876543210' },
+                { icon: 'bi-envelope', label: 'kishorshelar560@gmail.com', href: 'mailto:kishorshelar@gmail.com' },
+                { icon: 'bi-telephone', label: '+91 8308516345', href: 'tel:+918308516345' },
                 { icon: 'bi-geo-alt', label: 'Pune, Maharashtra, India', href: '#' },
               ].map(c => (
                 <a key={c.label} href={c.href} className="footer-contact-item">

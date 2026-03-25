@@ -7,10 +7,10 @@ import { fadeUp, slideLeft, slideRight } from '../../animations/variants';
 import './Contact.css';
 
 const CONTACT_INFO = [
-  { icon: 'bi-envelope-fill', label: 'Email', value: 'kishorshelar@gmail.com', href: 'mailto:kishorshelar@gmail.com', color: '#6366f1' },
-  { icon: 'bi-telephone-fill', label: 'Phone', value: '+91 98765 43210', href: 'tel:+919876543210', color: '#f59e0b' },
+  { icon: 'bi-envelope-fill', label: 'Email', value: 'kishorshelar560@gmail.com', href: 'mailto:kishorshelar560@gmail.com', color: '#6366f1' },
+  { icon: 'bi-telephone-fill', label: 'Phone', value: '+91 83085 16345', href: 'tel:+918308516345', color: '#f59e0b' },
   { icon: 'bi-geo-alt-fill', label: 'Location', value: 'Pune, Maharashtra, India', href: 'https://maps.google.com/?q=Pune,India', color: '#a78bfa' },
-  { icon: 'bi-linkedin', label: 'LinkedIn', value: 'linkedin.com/in/kishorshelar', href: 'https://linkedin.com/in/kishorshelar', color: '#0077b5' },
+  { icon: 'bi-linkedin', label: 'LinkedIn', value: 'linkedin.com/in/kishorshelar1610', href: 'https://linkedin.com/in/kishorshelar1610', color: '#0077b5' },
 ];
 
 const initForm = { name: '', email: '', message: '' };
@@ -133,7 +133,7 @@ const Contact = () => {
                         </label>
                         <input id="name" name="name" type="text"
                           className={`form-input-custom${errors.name ? ' error' : ''}`}
-                          placeholder="Rahul Deshmukh"
+                          placeholder=""
                           value={form.name} onChange={handleChange} autoComplete="name" />
                         {errors.name && <span className="field-error">{errors.name}</span>}
                       </div>
@@ -143,7 +143,7 @@ const Contact = () => {
                         </label>
                         <input id="email" name="email" type="email"
                           className={`form-input-custom${errors.email ? ' error' : ''}`}
-                          placeholder="rahul@example.com"
+                          placeholder=""
                           value={form.email} onChange={handleChange} autoComplete="email" />
                         {errors.email && <span className="field-error">{errors.email}</span>}
                       </div>
