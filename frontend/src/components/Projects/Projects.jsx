@@ -57,6 +57,32 @@ const projects = [
     icon: 'bi-grid-3x3-gap-fill',
     bgIcon: '🎮',
   },
+  {
+    id: 5,
+    title: 'Personal Calendar Generator',
+    description: 'A custom calendar application allowing users to upload images, add events, and generate personalized printable calendars with export functionality.',
+    techStack: ['React', 'Node.js', 'MongoDB', 'Cloudinary', 'Express'],
+    githubUrl: 'https://github.com/kishorshelar07',
+    liveUrl: '#',
+    category: 'Full-Stack',
+    featured: true,
+    gradient: 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)',
+    icon: 'bi-calendar2-heart-fill',
+    bgIcon: '📅',
+  },
+  {
+    id: 6,
+    title: 'Tic Tac Toe Game',
+    description: 'An interactive browser-based Tic Tac Toe game with AI opponent using minimax algorithm, sound effects, score tracking, and smooth animations.',
+    techStack: ['HTML', 'CSS', 'JavaScript'],
+    githubUrl: 'https://github.com/kishorshelar07',
+    liveUrl: '#',
+    category: 'Frontend',
+    featured: false,
+    gradient: 'linear-gradient(135deg, #a78bfa 0%, #7c3aed 100%)',
+    icon: 'bi-grid-3x3-gap-fill',
+    bgIcon: '🎮',
+  },
 ];
 
 const FILTERS = ['All', 'Full-Stack', 'Frontend', 'Backend'];
